@@ -5,31 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./styles.css" />
+    
+    <script type="module" src="./form.js" defer></script>
   </head>
   <body>
     <header class="header">
         <h1 class="header__title">Quiz-App</h1>
       </header>
-      <main>
-      <form data-js="form">
+    
+      <main data-js="main">
+      
         <fieldset>
-          <article class="inputQuestion">
-          <label for="first-name">Your Question</label>
-          <textarea id="story" name="story"
-          rows="5" cols="33">Hier ist der Platz für Deine Fragen...</textarea>
+          <form data-js="form">
+
+          <article class="new-question">
+          <label for="new-question">Your Question</label>
+          <textarea id="new-question" name="new-question"
+          rows="5" cols="30">Deine Frage</textarea>
         </article>
 
           
-          <article class="inputAnswer">
-          <label for="first-name">Your answer</label>
-          <textarea id="story" name="story"
-          rows="5" cols="33">Hier ist der Platz für Deine Antworten...</textarea>
+          <article class="new-answer">
+          <label for="new-answer">Your answer</label>
+          <textarea id="new-answer" name="new-answer"
+          rows="5" cols="30">Deine Antwort</textarea>
         </article>
           
-        <article class="inputTag">
-          <label for="first-name">Tag</label>
-          <input type="text" id="name" name="name" required
-          minlength="4" maxlength="8" size="10">
+        <article class="input-tag">
+          <label for="input-tag">Tag</label>
+          <input type="text" id="input-tag" name="input-tag" required
+          minlength="4" maxlength="10" size="20">
         </article>
       
         <article class="inputSubmit"> 
