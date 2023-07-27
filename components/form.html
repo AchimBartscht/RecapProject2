@@ -5,44 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./styles.css" />
-    
-    <script type="module" src="./form.js" defer></script>
+
+    <script src="./form.js" defer></script>
   </head>
   <body>
     <header class="header">
-        <h1 class="header__title">Quiz-App</h1>
-      </header>
-    
-      <main data-js="main">
-      
-        <fieldset>
-          <form data-js="form">
+      <h1 class="header__title">Quiz-App</h1>
+    </header>
 
+    <main data-js="main">
+      <fieldset>
+        <form data-js="form">
           <article class="new-question">
-          <label for="new-question">Your Question</label>
-          <textarea id="new-question" name="new-question"
-          rows="5" cols="30">Deine Frage</textarea>
-        </article>
+            <label for="new-question">Your Question</label>
+            <textarea id="new-question" name="new-question" rows="5" cols="30">
+Deine Frage</textarea
+            >
+          </article>
 
-          
           <article class="new-answer">
-          <label for="new-answer">Your answer</label>
-          <textarea id="new-answer" name="new-answer"
-          rows="5" cols="30">Deine Antwort</textarea>
-        </article>
-          
-        <article class="input-tag">
-          <label for="input-tag">Tag</label>
-          <input type="text" id="input-tag" name="input-tag" required
-          minlength="4" maxlength="10" size="20">
-        </article>
-      
-        <article class="inputSubmit"> 
-        <button type="submit">Submit!</button>
-      </article>
-        </fieldset>
-      </main>
-      <footer>
+            <label for="new-answer">Your answer</label>
+            <textarea id="new-answer" name="new-answer" rows="5" cols="30">
+Deine Antwort</textarea
+            >
+          </article>
+
+          <article class="input-tag">
+            <label for="input-tag">Tag</label>
+            <input
+              type="text"
+              id="input-tag"
+              name="input-tag"
+              required
+              minlength="4"
+              maxlength="10"
+              size="20"
+            />
+          </article>
+
+          <article class="inputSubmit">
+            <button type="submit">Submit!</button>
+          </article>
+        </form>
+      </fieldset>
+    </main>
+    <footer>
       <nav class="navigation">
         <ul class="navigation__list">
           <li class="navigation__list-item navigation__list-item--active">
@@ -87,16 +94,19 @@
               href="/form.html"
               aria-label="go to form page"
             >
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="black" d="M11 17h2v-4h4v-2h-4V7h-2v4H7v2h4v4Zm1 5q-2.075 0-3.9-.788t-3.175-2.137q-1.35-1.35-2.137-3.175T2 12q0-2.075.788-3.9t2.137-3.175q1.35-1.35 3.175-2.137T12 2q2.075 0 3.9.788t3.175 2.137q1.35 1.35 2.138 3.175T22 12q0 2.075-.788 3.9t-2.137 3.175q-1.35 1.35-3.175 2.138T12 22Zm0-2q3.35 0 5.675-2.325T20 12q0-3.35-2.325-5.675T12 4Q8.65 4 6.325 6.325T4 12q0 3.35 2.325 5.675T12 20Zm0-8Z"/></svg>
-
-
-
-
-</a>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="black"
+                  d="M11 17h2v-4h4v-2h-4V7h-2v4H7v2h4v4Zm1 5q-2.075 0-3.9-.788t-3.175-2.137q-1.35-1.35-2.137-3.175T2 12q0-2.075.788-3.9t2.137-3.175q1.35-1.35 3.175-2.137T12 2q2.075 0 3.9.788t3.175 2.137q1.35 1.35 2.138 3.175T22 12q0 2.075-.788 3.9t-2.137 3.175q-1.35 1.35-3.175 2.138T12 22Zm0-2q3.35 0 5.675-2.325T20 12q0-3.35-2.325-5.675T12 4Q8.65 4 6.325 6.325T4 12q0 3.35 2.325 5.675T12 20Zm0-8Z"
+                />
+              </svg>
+            </a>
           </li>
-
-
-
 
           <li class="navigation__list-item">
             <a
